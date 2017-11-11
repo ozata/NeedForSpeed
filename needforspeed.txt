@@ -1,0 +1,35 @@
+package needforspeed;
+import java.util.Scanner;
+
+public class NeedForSpeed {
+    public static void main(String[] args) {
+        Scanner OIS;
+        OIS = new Scanner(System.in);
+        System.out.println("Enter the number of sections: ");
+        int sections = OIS.nextInt();
+        
+        System.out.println("Enter the total time");
+        double time = OIS.nextDouble();
+        
+        double [] distanceOfSegments;
+        distanceOfSegments = new double[sections];
+        
+        double [] speedometerReading;
+        speedometerReading = new double[sections];
+        
+        double c=0.0;
+        int counter=1;
+        
+            for(int i=0;i<sections;i++)
+            {   
+                
+                System.out.println("Please enter the distance of the segment " + counter);
+                distanceOfSegments[i] = OIS.nextInt();
+                System.out.println("Please enter the speedometer reading of the segment " + counter);
+                speedometerReading[i] = OIS.nextInt();
+                counter++;
+            }
+            
+        
+    }
+}
